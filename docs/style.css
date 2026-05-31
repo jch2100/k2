@@ -1,0 +1,107 @@
+/* 일잘러노트 — 비개발 직장인 AI 업무자동화 콘텐츠 사이트 */
+:root {
+  --bg: #ffffff;
+  --ink: #1a1a1a;
+  --ink-soft: #555;
+  --line: #e8e8e8;
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+  --accent: #f5f7ff;
+  --radius: 12px;
+  --max: 760px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 헤더 */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px); z-index: 10;
+}
+.site-header .inner {
+  max-width: var(--max); margin: 0 auto; padding: 16px 20px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo { font-weight: 800; font-size: 19px; color: var(--ink); letter-spacing: -0.02em; }
+.logo span { color: var(--brand); }
+.nav a { color: var(--ink-soft); font-size: 14px; margin-left: 18px; font-weight: 600; }
+
+/* 본문 컨테이너 */
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+/* 히어로 */
+.hero { padding: 56px 20px 32px; text-align: center; }
+.hero h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.3; }
+.hero p { margin-top: 14px; color: var(--ink-soft); font-size: 16px; }
+
+/* 글 목록 */
+.post-list { list-style: none; padding: 24px 0 48px; }
+.post-card {
+  display: block; padding: 22px; border: 1px solid var(--line);
+  border-radius: var(--radius); margin-bottom: 16px; transition: .15s;
+}
+.post-card:hover { border-color: var(--brand); text-decoration: none; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,99,235,.08); }
+.post-card .tag { font-size: 12px; color: var(--brand); font-weight: 700; }
+.post-card h2 { font-size: 20px; margin: 6px 0; color: var(--ink); letter-spacing: -0.02em; }
+.post-card p { color: var(--ink-soft); font-size: 14.5px; }
+
+/* 아티클 */
+article.post { padding: 40px 0 24px; }
+article.post .meta { font-size: 13px; color: var(--ink-soft); }
+article.post h1 { font-size: 28px; line-height: 1.4; letter-spacing: -0.03em; margin: 10px 0 24px; }
+article.post h2 { font-size: 21px; margin: 36px 0 12px; letter-spacing: -0.02em; }
+article.post h3 { font-size: 17px; margin: 24px 0 8px; }
+article.post p { margin: 14px 0; }
+article.post ul, article.post ol { margin: 14px 0 14px 22px; }
+article.post li { margin: 6px 0; }
+.prompt {
+  background: #0f172a; color: #e2e8f0; border-radius: 10px;
+  padding: 16px 18px; font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 13.5px; line-height: 1.7; white-space: pre-wrap; margin: 16px 0;
+}
+.callout {
+  background: var(--accent); border-left: 4px solid var(--brand);
+  padding: 14px 18px; border-radius: 8px; margin: 20px 0; font-size: 15px;
+}
+
+/* 광고 슬롯 */
+.ad-slot {
+  margin: 28px 0; min-height: 90px; display: flex; align-items: center;
+  justify-content: center; background: #fafafa; border: 1px dashed #ddd;
+  border-radius: 8px; color: #bbb; font-size: 12px;
+}
+
+/* 제휴 박스 */
+.affiliate {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px; margin: 24px 0; background: #fff;
+}
+.affiliate .label { font-size: 11px; color: #999; font-weight: 700; letter-spacing: .04em; }
+.affiliate h4 { font-size: 16px; margin: 6px 0; }
+.affiliate p { font-size: 14px; color: var(--ink-soft); margin: 6px 0 14px; }
+.btn {
+  display: inline-block; background: var(--brand); color: #fff;
+  padding: 11px 20px; border-radius: 8px; font-weight: 700; font-size: 14px;
+}
+.btn:hover { background: var(--brand-dark); text-decoration: none; }
+
+/* 푸터 */
+.site-footer {
+  border-top: 1px solid var(--line); margin-top: 48px; padding: 32px 20px;
+  text-align: center; color: var(--ink-soft); font-size: 13px;
+}
+.site-footer a { color: var(--ink-soft); margin: 0 8px; }
+.disclosure {
+  max-width: var(--max); margin: 0 auto; padding: 14px 20px;
+  font-size: 12px; color: #999; background: #fafafa; border-radius: 8px;
+}

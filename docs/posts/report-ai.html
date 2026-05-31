@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>월간 보고서, 데이터만 주면 AI가 초안까지 — 비개발자 워크플로우 | 일잘러노트</title>
+  <meta name="description" content="매출 CSV 한 장으로 차트와 코멘트가 들어간 HTML 대시보드를 AI로 만드는 법. 코딩 없이 따라 하는 월간 보고서 자동화 워크플로우." />
+  <meta name="keywords" content="보고서 자동화, AI 보고서, 매출 대시보드, CSV 시각화, 월간보고서, 비개발자 데이터분석" />
+  <link rel="stylesheet" href="../style.css" />
+  <!-- 애드센스 승인 후 주석 해제
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="../index.html">일잘러<span>노트</span></a>
+      <nav class="nav"><a href="../index.html">홈</a><a href="../about.html">소개</a></nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <article class="post">
+      <div class="meta">보고서 · 읽는 데 7분</div>
+      <h1>월간 보고서, 데이터만 주면 AI가 초안까지 — 비개발자 워크플로우</h1>
+
+      <p>월말마다 매출표를 붙잡고 차트 만들고 코멘트 다는 일, 이제 AI에게 넘기세요.
+      <strong>CSV 한 장</strong>만 있으면 차트와 분석 코멘트가 들어간 <strong>HTML 대시보드</strong>를 브라우저에서 바로 열 수 있게 만들어 줍니다.</p>
+
+      <h2>1단계 — 데이터 준비</h2>
+      <p>엑셀에서 "다른 이름으로 저장 → CSV"를 누르면 끝. 예시 컬럼: <code>날짜, 거래처, 제품, 수량, 금액</code></p>
+
+      <div class="ad-slot">광고 영역</div>
+
+      <h2>2단계 — 대시보드 만들기 프롬프트</h2>
+      <div class="prompt">아래 CSV는 우리 회사 4월 매출 데이터야.
+[CSV 내용 붙여넣기]
+
+거래처별 매출 순위(막대그래프)와 제품별 비중(원그래프)을 보여주는
+HTML 대시보드를 만들어줘.
+- Chart.js 사용, 브라우저에서 바로 열 수 있게 한 파일로
+- 상단에 이번 달 총매출과 전월 대비 코멘트 한 줄
+- 한국어, 깔끔하고 실용적인 디자인</div>
+
+      <h2>3단계 — 파일로 저장해서 열기</h2>
+      <p>AI가 준 코드를 메모장에 붙여넣고 <code>report.html</code>로 저장한 뒤 더블클릭하면 대시보드가 열립니다.
+      이게 바로 "코딩 없이 만든 내 첫 데이터 도구"입니다.</p>
+
+      <h2>4단계 — 코멘트까지 AI에게</h2>
+      <div class="prompt">위 매출 데이터를 보고, 보고서에 들어갈 분석 코멘트를
+3문장으로 써줘. 잘된 점 1개, 우려되는 점 1개, 다음 달 제안 1개.</div>
+
+      <div class="affiliate">
+        <span class="label">추천 도구</span>
+        <h4>파일 업로드로 더 편하게</h4>
+        <p>CSV를 통째로 붙여넣기 번거롭다면, 파일을 그대로 업로드해 분석시키는 유료 AI 플랜이 편합니다.
+        큰 데이터·여러 시트도 한 번에 처리됩니다.</p>
+        <a class="btn" href="#" rel="sponsored nofollow" target="_blank">파일 분석 가능한 AI 보기 →</a>
+      </div>
+
+      <div class="callout">✅ 핵심: 보고서의 90%는 "형식"입니다. 형식은 AI가, 숫자 검증과 최종 판단은 사람이.
+      한 번 만든 프롬프트는 다음 달에 데이터만 바꿔 재사용하세요.</div>
+
+      <div class="ad-slot">광고 영역</div>
+
+      <p style="margin-top:24px;">👉 다음 글: <a href="file-organize-ai.html">다운로드 폴더 30초 자동 정리</a></p>
+    </article>
+
+    <p class="disclosure">본 페이지에는 제휴(어필리에이트) 링크가 포함될 수 있으며, 이를 통해 소정의 수수료를 받을 수 있습니다. 구매자에게 추가 비용은 없습니다.</p>
+  </div>
+
+  <footer class="site-footer">
+    <p><a href="../about.html">소개</a> · <a href="../privacy.html">개인정보처리방침</a></p>
+    <p style="margin-top:10px;">© 2026 일잘러노트.</p>
+  </footer>
+</body>
+</html>
